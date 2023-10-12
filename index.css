@@ -1,0 +1,39 @@
+*{
+    font-family: 'Poppins', serif;
+}
+
+body{
+    background: #9cbbf1;
+}
+
+h1{
+    color: #000;
+}
+h3{
+    color: #fff;
+}
+nav{
+    background: #fff;
+}
+.brand-logo>i{
+    margin-left: 10px;
+}
+ul>li>a{
+    color: #000;
+}
+ul>li>a.active{
+    color: #fff;
+    background: #3070e0;
+}
+.nav-content>.tabs>.tab>a.active{
+    color: #fff;
+    background: #3070e065;
+}
+#mobile-demo{
+    color: #000;
+}
+.fa-user-group, .fa-people-group, .fa-store, .fa-video{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: black;
+}

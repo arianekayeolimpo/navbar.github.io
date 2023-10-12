@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Young+Serif&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/15605ae162.js" crossorigin="anonymous"></script>
+
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- icon link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Navbar & Footer</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Navbar</h1>
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+        <!-- Right Aligned Links -->
+        <h3>Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your that contains them.
+        </p>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><i class="fa-brands fa-facebook fa-lg" style="color: #005af5;"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+
+        <!-- Left Aligned Links -->
+        <h3>Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your ul that contains them.</p>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right"><i class="fa-brands fa-facebook fa-lg" style="color: #005af5;"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Centering the logo -->
+        <br>
+        <h3>Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your (a class="brand-logo"). You will have to make sure yourself that links do not overlap if you use this.</p>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center"><i class="fa-brands fa-facebook fa-lg" style="color: #005af5;"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <<li><a href="#">Videos</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Active Items -->
+        <br>
+        <h3>Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center"><i class="fa-brands fa-facebook fa-lg" style="color: #005af5;"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Extended Navbar with Tabs -->
+        <br>
+        <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><i class="fa-brands fa-facebook fa-lg" style="color: #005af5;"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars" style="color: rgb(94, 89, 89);"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                  <li class="tab"><a class="active" style="color: #3070e0; " href="#test1">Friends</a></li>
+                  <li class="tab"><a style="color: #3070e0;" href="#test2">Group</a></li>
+                  <li class="tab"><a style="color: #3070e0;"  href="#test3">Marketplace</a></li>
+                  <li class="tab"><a style="color: #3070e0;"  href="#test4">Video</a></li>
+                </ul>
+              </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a style="color: #3070e0; "  href="#" >Home</a></li>
+            <li><a style="color: #3070e0; "  href="#">Videos</a></li>
+            <li><a style="color: #3070e0; "  href="#">Account</a></li>
+        </ul>
+        <div id="test1" class="col s12">
+            <i class="fa-solid fa-user-group"></i>
+        </div>
+        <div id="test2" class="col s12">
+            <i class="fa-solid fa-people-group"></i>
+        </div>
+        <div id="test3" class="col s12">
+            <i class="fa-solid fa-store"></i>
+        </div>
+        <div id="test4" class="col s12">
+            <i class="fa-solid fa-video"></i>
+        </div>
+
+    </div>
+
+    <div style="height: 1000px;"></div>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            //sidenav initialization
+            $('.sidenav').sidenav({
+                edge: 'right'
+            });
+            // tabs initialization
+            $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+        });
+    </script>
+</body>
+</html>
